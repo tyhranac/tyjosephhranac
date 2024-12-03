@@ -13,7 +13,7 @@ Storing boolean attributes (e.g. `Yes`/`No` values) in a string field without an
 ![Screenshot of integer field with domain storing boolean attributes -- good!]({{site.url}}/_assets/YesNoFieldWithDomain.png)
 
 Here's a quick snippet for updating a feature layer string field storing `Yes`/`No` values to an integer field with a `Yes`=`1`/`No`=`0` domain:
-```
+{% highlight python %}
 from getpass import getpass
 
 from arcgis.gis import GIS
@@ -69,4 +69,4 @@ questionable_data_choices_layer.calculate(where="1=1", calc_expression={"field":
 
 # Delete temp field
 questionable_data_choices_layer.manager.delete_from_definition({"fields": [{"name": "TempActiveWell"}]})
-```
+{% endhighlight %}
