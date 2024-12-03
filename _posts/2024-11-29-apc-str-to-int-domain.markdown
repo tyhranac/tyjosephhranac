@@ -7,7 +7,7 @@ categories: jekyll update
 ### Issue
 ![Screenshot of string field storing boolean attributes -- bad!]({{site.url}}/_assets/YesNoFieldWithoutDomain.png)
 
-Storing boolean attributes, like `Yes`/`No` values, in a string field without any domain is the most common data quality issue I encounter when managing feature layers in ArcGIS Online/Enterprise. Doing so introduces the potential for data inconsistency, increases the complexity of maintenance/analysis, and wastes space. If this issue gets introduced, it tends to persist, since there's currently no easy fix.
+Storing boolean attributes (e.g. `Yes`/`No` values) in a string field without any domain is the most common data quality issue I encounter when managing feature layers in ArcGIS Online/Enterprise. Doing so introduces the potential for data inconsistency, increases the complexity of maintenance/analysis, and wastes space. If this issue gets introduced, it tends to persist, since there's currently no easy fix.
 
 ### Solution
 ![Screenshot of integer field with domain storing boolean attributes -- good!]({{site.url}}/_assets/YesNoFieldWithDomain.png)
